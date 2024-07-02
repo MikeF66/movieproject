@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #DCDCDC;
+}
+
+h1 {
+    color: #343a40;
+    padding: 20px;
+}
+h3 {
+    color: #343a40;
+    padding: 10px;
+}
+h4 {
+    color: #343a40;
+}
+
+/* Стили для aside */
+aside {
+    background-color: #C0C0C0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+}
+
+aside img {
+    border: 5px solid #DCDCDC;
+}
+
+aside span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Стили для main */
+main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+main .content-header {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+main .content-body {
+    line-height: 1.6;
+}
+
+main .content-footer {
+    border-top: 1px solid #dee2e6;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+/* Навигация */
+nav {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Медиа запросы */
+@media (max-width: 767px) {
+    aside {
+        margin-bottom: 20px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Футер */
+    footer {
+        background-color: #696969;
+        color: #fff;
+        padding: 10px 0;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .footer-section {
+        flex: 1;
+        margin: 0 10px;
+    }
+    .footer-section h3 {
+        margin-bottom: 10px;
+        color: #FFFFFF;
+    }
+    .footer-section p, .footer-section ul, .footer-section li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .footer-section ul {
+        margin-top: 10px;
+    }
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer-section ul li a:hover {
+        text-decoration: underline;
+    }
+    .footer-bottom {
+        background-color: #2F4F4F;
+        text-align: center;
+        margin-top: 10px;
+    }

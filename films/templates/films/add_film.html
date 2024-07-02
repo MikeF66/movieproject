@@ -1,0 +1,42 @@
+{% extends 'films/layout.html' %}
+
+{% block title %}
+    <title>{{page}}</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-2">
+        <h2 class="mb-3">Добавьте фильм на страницу сайта {{caption}}!</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <form method="post" action="{% url 'add_film' %}">  <!--action="page.html" - добавляется если нужно
+                перейти на др.страницу. в данном случае его можно не указывать-->
+                    {%  csrf_token %}
+                     <div class="form-group">
+                        <label for="title">Название фильма</label>
+                        {{ form.title }}
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Описание фильма</label>
+                        {{ form.description }}
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Содержание фильма</label>
+                        {{ form.content }}
+                    </div>
+                    <div class="form-group">
+                        <label for="review">Отзыв</label>
+                        {{ form.review }}
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Дата</label>
+                        {{ form.date }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Добавить новость</button>
+                </form>
+                <p>{{error}}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
